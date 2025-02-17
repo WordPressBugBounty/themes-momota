@@ -247,7 +247,7 @@ $momota_theme_action_button           = __( 'See features', 'momota' );
 $momota_theme_action_button_secondary = __( 'Contact us', 'momota' );
 
 $momota_theme_click_pen_to_edit_title = __( 'Smarter. Faster. Better.', 'momota' );
-$momota_lorem_ipsum                   = 'Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae. In his nemore temporibus consequuntur, vim ad prima vivendum consetetur.';
+$momota_lorem_ipsum                   = __( 'Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae. In his nemore temporibus consequuntur, vim ad prima vivendum consetetur.', "momota" );
 
 
 return array(

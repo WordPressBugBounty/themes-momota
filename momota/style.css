@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*! 
  Theme Name:   Momota
- Version:      1.0.4
+ Version:      1.0.5
  Description:  Momota is an innovative,  easily customizable, multi-purpose theme, focused on empowering users to build astonishing WordPress websites. Momota is mainly designed for small businesses, startups, or personal portfolio websites and works perfectly with Kubio Page Builder which enriches the WordPress block editor with a variety of new blocks and advanced styling options to give you full design freedom.
  Author:       Extend Themes
  Author URI:   https://kubiobuilder.com
@@ -1772,6 +1772,7 @@ html.momota-theme .kubio-dropdown-menu.solid-active-item.effect-none .kubio-menu
 html.momota-theme .kubio-dropdown-menu.solid-active-item.effect-none .kubio-menu>ul>li.current_page_item:before{opacity:1!important}
 html.momota-theme .kubio-dropdown-menu.solid-active-item.effect-none .kubio-menu>ul>li.current-menu-item:after,
 html.momota-theme .kubio-dropdown-menu.solid-active-item.effect-none .kubio-menu>ul>li.current_page_item:after{visibility:hidden}
+html[lang] .wp-block-kubio-dropdown-menu>.kubio-menu>.menu>.menu-item>a>br{display:none!important}
 html.momota-theme .kubio-accordion-menu li{flex-direction:column}
 html.momota-theme .kubio-accordion-menu li:last-of-type{border-bottom:none!important}
 html.momota-theme .kubio-accordion-menu li>ul{display:none}
@@ -1787,6 +1788,7 @@ html.momota-theme .kubio-accordion-menu li ul>li>a:before{content:" ";display:bl
 html.momota-theme .kubio-accordion-menu .h-block-placeholder{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;font-style:normal;font-weight:400;letter-spacing:normal;text-decoration:none;text-transform:none}
 html.momota-theme .wp-block-kubio-menu-offscreen__container{width:100%}
 html.momota-theme .wp-block-kubio-menu-offscreen__inner{height:100%}
+html.momota-theme .wp-block-kubio-menu-offscreen__iconWrapper:focus:focus-visible{outline:auto}
 html.momota-theme .kubio-offscreen{-webkit-animation-duration:.25s;animation-duration:.25s;height:100%;margin:0;min-height:100%;overflow:hidden auto;position:fixed;right:0;top:0;width:300px;z-index:2000001}
 html.momota-theme .kubio-offscreen-overlay{bottom:0;cursor:pointer;display:block;left:0;opacity:0;position:fixed;right:0;top:0;transition:opacity .25s linear;visibility:hidden;z-index:-1000}
 html.momota-theme .h-offcanvas-opened{display:block;opacity:1;visibility:visible;z-index:20000}
@@ -1801,11 +1803,14 @@ html.momota-theme .wp-block-kubio-navigation [data-kubio]:not([class*=h-col-]){m
 html.momota-theme .wp-block-kubio-navigation.h-navigation_overlap{left:0;position:absolute!important;right:0;z-index:10001}
 html.momota-theme .wp-block-kubio-navigation [data-nav-normal]{transition:all .5s}
 html.momota-theme .wp-block-kubio-navigation .h-hide-normal{display:none}
+html.momota-theme .wp-block-kubio-navigation .h-navigation_sticky .wp-block-kubio-row__inner{display:grid;grid-template-columns:auto auto;justify-content:space-between!important}
+html.momota-theme .wp-block-kubio-navigation .h-navigation_sticky .wp-block-kubio-row__inner:has(>:nth-child(3)){display:flex}
 html.momota-theme .wp-block-kubio-navigation .h-navigation_sticky .h-hide-normal{display:flex}
 html.momota-theme .wp-block-kubio-navigation .h-navigation_sticky .h-hide-sticky{display:none}
 html.momota-theme .wp-block-kubio-navigation__outer{position:relative}
 html.momota-theme .wp-block-kubio-navigation_container-in-sticky{z-index:9999}@-webkit-keyframes slideOutDownNavigation{0%{transform:translateZ(0)}to{transform:translate3d(0,-100%,0);visibility:hidden}}@keyframes slideOutDownNavigation{0%{transform:translateZ(0)}to{transform:translate3d(0,-100%,0);visibility:hidden}}
 html.momota-theme .slideOutDownNavigation{-webkit-animation-name:slideOutDownNavigation;animation-name:slideOutDownNavigation}
+html.momota-theme .fade-animation-without-other-transitions{transition-property:opacity!important}
 html.momota-theme .wp-block-kubio-page-title{word-break:break-word}
 html.momota-theme .wp-block-kubio-page-title .components-select-control__input{line-height:unset!important}
 html.momota-theme .wp-block-kubio-page-title .kubio-alternate-logo-image{display:none}
