@@ -243,11 +243,12 @@ $momota_gradients = array(
 		),
 
 );
-$momota_theme_action_button           = __( 'See features', 'momota' );
-$momota_theme_action_button_secondary = __( 'Contact us', 'momota' );
 
-$momota_theme_click_pen_to_edit_title = __( 'Smarter. Faster. Better.', 'momota' );
-$momota_lorem_ipsum                   = __( 'Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae. In his nemore temporibus consequuntur, vim ad prima vivendum consetetur.', "momota" );
+$momota_theme_click_pen_to_edit_title =  'Smarter. Faster. Better.';
+$momota_lorem_ipsum                   =  'Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae. In his nemore temporibus consequuntur, vim ad prima vivendum consetetur.';
+
+$momota_theme_action_button           = 'See features';
+$momota_theme_action_button_secondary = 'Contact us';
 
 
 return array(
@@ -710,31 +711,5 @@ return array(
 	'blog_post_thumb_placeholder_color' => 'rgb(175, 186, 207)',
 	'blog_show_post_thumb_placeholder'  => true,
 	'blog_posts_per_row'                => 2,
-	'blog_enable_masonry'               => true,
-
-	'front_page_designs'                => array(
-		array(
-			'name'    => __( 'Modern', 'momota' ),
-			'index'   => 1,
-			'preview' => 'front-page-1.jpg',
-		),
-
-		array(
-			'name'    => __( 'Fullscreen', 'momota' ),
-			'index'   => 2,
-			'preview' => 'front-page-2.jpg',
-		),
-
-		array(
-			'name'    => __( 'Classic', 'momota' ),
-			'index'   => 3,
-			'preview' => 'front-page-3.jpg',
-		),
-
-		array(
-			'name'    => __( '', 'momota' ),
-			'index'   => 4,
-			'preview' => 'admin/ai-icon.svg',
-		),
-	),
+	'blog_enable_masonry'               => true
 );

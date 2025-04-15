@@ -128,14 +128,20 @@ momota_theme()
 			'width'       => 150,
 			'height'      => 70,
 		)
-	)
-	->register_menus(
-		array(
-			'header-menu' => esc_html__( 'Header Menu', 'momota' ),
-			'footer-menu' => esc_html__( 'Footer Menu', 'momota' ),
-		)
 	);
 
+add_action(
+    'after_setup_theme',
+    function() {
+        momota_theme()->register_menus(
+            array(
+                'header-menu' => esc_html__( 'Header Menu', 'momota' ),
+                'footer-menu' => esc_html__( 'Footer Menu', 'momota' ),
+            )
+        );
+    },
+    1
+);
 if ( ! apply_filters( 'kubio_is_enabled', false ) ) {
 	momota_assets()
 		->registerTemplateScript(
